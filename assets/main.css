@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h3 {
+        @apply text-sky-600;
+    }
+}
+
+@layer utilities {
+    .my-tw-class {
+        color: red !important;
+    }
+}
+
 @import "fonts.css";
 
 :root {
@@ -45,10 +61,10 @@
 }
 
 .parent {
-    padding: 20px;
-    display: grid;
+    /*padding: 20px;*/
+    /*display: grid;*/
     grid-template-columns: 2fr 1fr 300px;
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 .item {
@@ -121,20 +137,20 @@
 }
 
 .responsive-example {
-    max-width: 1100px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    /*max-width: 1100px;*/
+    /*margin: 20px auto;*/
+    /*display: grid;*/
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    /*gap: 20px;*/
 }
 
 .responsive-item {
     background-color: rgb(204, 247, 230);
-    padding: 20px;
-    color: rgb(90, 145, 123);
+    /*padding: 20px;*/
+    /*color: rgb(90, 145, 123);*/
     font-size: 0.77rem;
-    line-height: 1.7;
-    overflow: auto;
+    /*line-height: 1.7;*/
+    /*overflow: auto;*/
 }
 
 .art-banner {
@@ -146,7 +162,7 @@
 }
 .art-banner-bg {
     opacity: 0.1;
-    background: url("media/bg.jpg") center center no-repeat;
+    background: url("../media/bg.jpg") center center no-repeat;
     background-size: cover;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
